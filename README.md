@@ -10,4 +10,3 @@ Screens:
 
 !(https://github.com/MaxxxWell22/MovieApp/blob/main/4.png)
 
-!(https://github.com/MaxxxWell22/MovieApp/blob/main/5.png)
