@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.button {
+    border: 1px solid rgba(255, 255, 255, .7);
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    background-color: transparent;
+    outline: none;
+    font-size: calc(15px + 8 * (100vw/1080));
+    margin-right: 0.75rem;
+    color: $white;
+    display: inline-flex;
+    align-items: center;
+    width: calc(120px + 8 * (100vw/1080));
+    font-weight: 700;
+
+    &:hover {
+        border-color: tomato;
+        background-color: #222222;
+        color: tomato;
+    }
+
+    >i {
+        font-size: 24px;
+        margin-right: 0.1rem;
+    }
+}

@@ -1,0 +1,125 @@
+@import '../../../../variables';
+
+.episodes {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container {
+        .swiperConteiner {
+            position: relative;
+            height: 15rem;
+            padding: 2rem 0;
+
+            .swiperSlide {
+                flex-shrink: 0; 
+                position: relative;
+                height: 15rem; 
+                width: 25rem;
+            }
+        }
+    }
+
+    .carouselChild {
+        .carouselPhoto {
+            width: 400px;
+            opacity: 0.9;
+            position: relative;
+        }
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: flex-end;
+
+        h3 {
+            margin-right: calc(20px + 10 * (100vw/1080));
+            font-size: calc(10px + 10 * (100vw/1080));
+        }
+    }
+
+    i {
+        font-size: 24px;
+        // margin-right: 0.3rem;
+    }
+
+    h3 {
+        color: $white;
+        // margin-right: 3rem;
+        // margin-top: 4rem;
+    }
+}
+
+// @media screen and (min-width: 250px) and (max-width: 1000px) {
+//     .episodes {
+//       width: 80%;
+//     }
+//   }
+
+@media screen and (min-width: 450px) and (max-width: 1000px) {
+    .episodes {
+        .carouselPhoto {
+            width: 280px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 449px) {
+    .episodes {
+        .carouselPhoto {
+            width: 240px !important;
+        }
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 700px) {
+    .container {
+        .swiperConteiner {
+            position: relative;
+            height: 12rem !important;
+            padding: 1rem 0 !important;
+
+            .swiperSlide {
+                flex-shrink: 0; 
+                position: relative;
+                height: 12rem !important; 
+                width: 20rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 570px) {
+    .container {
+        .swiperConteiner {
+            position: relative;
+            height: 10rem !important;
+            padding: 1rem 0 !important;
+
+            .swiperSlide {
+                flex-shrink: 0; 
+                position: relative;
+                height: 10rem !important; 
+                width: 16rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 400px) {
+    .container {
+        .swiperConteiner {
+            position: relative;
+            height: 9rem !important;
+            padding: 1rem 0 !important;
+
+            .swiperSlide {
+                flex-shrink: 0; 
+                position: relative;
+                height: 9rem !important; 
+                width: 14rem !important;
+            }
+        }
+    }
+}

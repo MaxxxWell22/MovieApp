@@ -1,0 +1,54 @@
+.btn {
+  border-radius: 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(12px + 1 * (100vw / 1080));
+  width: calc(130px + 1 * (100vw / 1080));
+  height: calc(30px + 1 * (100vw / 1080));
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(252, 214, 120, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: bold;
+  padding: 5px;
+  margin: 3px;
+  margin-top: 20px;
+}
+
+.btn--secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(12px + 1 * (100vw / 1080));
+  width: calc(130px + 1 * (100vw / 1080));
+  height: calc(30px + 1 * (100vw / 1080));
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(252, 214, 120, 0.2);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: bold;
+  padding: 5px;
+  margin: 3px;
+  margin-top: 20px;
+}
+
+.btn--primary:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.btn--secondary:hover {
+  background-color: whitesmoke;
+  color: black;
+}

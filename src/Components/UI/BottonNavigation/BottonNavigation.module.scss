@@ -1,0 +1,38 @@
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    >button {
+        opacity: 0.7;
+        transition: border-color .4s ease, opacity 0.4s ease;
+        border: none;
+        border-bottom: 4px solid transparent;
+        padding-bottom: 0.5rem;
+        font-size: calc(10px + 8 * (100vw/1080));
+        text-transform: uppercase;
+        color: #fff;
+        background-color: transparent;
+        margin: 0 1rem;
+
+        &.active {
+            border-color: #c62e21;
+            opacity: 1;
+        }
+
+        &:hover {
+            border-color: #c62e21;
+            opacity: 1;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.8;
+    }
+}

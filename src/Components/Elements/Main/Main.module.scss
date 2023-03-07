@@ -1,0 +1,72 @@
+@import '../../../variables';
+
+.wrapper {
+    position: relative;
+    display: flex;
+    padding: 0px 20px;
+
+    .wrapperChild {
+        width: 83%;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: calc(18px + 10 * (100vw/1080));
+    }
+
+    .example {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(to right, #0f1011, transparent);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .main {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .logo {
+            width: calc(150px + 100* (100vw/1080));
+            opacity: .8;
+            margin-top: 100px;
+        }
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(to right, #0f1011, transparent);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 250px)and (max-width: 600px) {
+
+    .wrapperChild {
+        width: 73%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        padding: 0px 10px;
+    }
+}

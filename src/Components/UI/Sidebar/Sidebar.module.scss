@@ -1,0 +1,56 @@
+@import '../../../variables';
+
+.sidebar {
+    width: 15%;
+
+    >button {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        font-size: calc(20px + 5 * (100vw/1080));
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 !important;
+        margin: 0 !important;
+        margin-top: 20px !important;
+        display: none;
+        animation: opacity .4s;
+
+        &.show {
+            display: block;
+        }
+
+        li {
+            margin-bottom: .5rem;
+
+            a {
+                padding-top: calc(0.2rem + 1 * (100vw/1080));
+                padding-bottom: calc(0.2rem + 1 * (100vw/1080));
+                display: block;
+                color: $white;
+                text-decoration: none;
+                border-left: 3px solid transparent;
+                font-size: calc(15px + 5 * (100vw/1080));
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                flex-wrap: wrap;
+                padding-left: 10px;
+
+                &:hover,
+                &.active {
+                    border-color: orange;
+                    background-color: #2A2A2C;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 350px)and (max-width: 600px) {
+    .sidebar {
+        width: 25%;
+    }
+}

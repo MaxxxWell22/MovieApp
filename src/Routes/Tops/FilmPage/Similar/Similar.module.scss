@@ -1,0 +1,50 @@
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .parent {
+      perspective: 900px;
+      height: 250px;
+      max-width: 300px;
+      margin: 20px;
+      position: relative;
+
+      .singlCart {
+        position: relative;
+        height: 250px;
+        max-width: 300px;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        box-shadow: 0 15px 30px rgba(252, 214, 120, 0.1);
+        border-radius: 20px;
+        opacity: 0.8;
+
+        .front {
+          width: 200px;
+          position: relative;
+          top: 0;
+          left: 0;
+          backface-visibility: hidden;
+          cursor: pointer;
+        }
+
+        .front {
+          cursor: pointer;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 20px;
+
+          .img {
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }

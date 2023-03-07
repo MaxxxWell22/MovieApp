@@ -1,0 +1,36 @@
+.items {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+  border-radius: 15px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  z-index: 2;
+  right: -25px;
+  top: -7px;
+}
+
+;
+
+.notification {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  i {
+    color: white;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+}
