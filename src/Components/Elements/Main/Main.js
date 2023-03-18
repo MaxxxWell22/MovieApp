@@ -29,7 +29,7 @@ const Main = () => {
                         loop={true}
                         speed={1500}
                         modules={[Autoplay]}
-                        autoplay={{ delay: 1500000, disableOnInteraction: false }}
+                        autoplay={{ delay: 1000, disableOnInteraction: false }}
                         style={{ width: '100%', height: '50vh', marginLeft: '0px', borderRadius: '10px' }}
                     >
                         {dataSlider.map(item => (
