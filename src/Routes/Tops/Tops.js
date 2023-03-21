@@ -6,7 +6,6 @@ import styles from './Tops.module.scss';
 
 const Tops = ({ films, pageNumber, setPageNumber, setInfoFilm }) => {
     const [isSideBarShow, setIsSideBarShow] = useState(false);
-    console.log(films)
 
     return (
         <div className={styles.wrapper}>

@@ -11,9 +11,7 @@ const FavoritePage = ({ setInfoFilm }) => {
     )
   } else {
     return (
-      <div className={styles.parent} style={{
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(https://wallpaper.dog/large/20430513.jpg)'
-      }}>
+      <div className={styles.parent}>
         <div className={styles.parentTwo}>
           {items.map((item) => <Page key={item.filmId} item={item} setInfoFilm={setInfoFilm} />)}
         </div>
