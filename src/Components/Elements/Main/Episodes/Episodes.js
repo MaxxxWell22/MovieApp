@@ -54,7 +54,7 @@ const Episodes = () => {
                 >
                     {avangerPhotos.map(photo => (
                         <SwiperSlide key={photo} className={styles.swiperSlide}>
-                            <img src={photo} style={{width: '100%', height: '100%'}} />
+                            <img src={photo} style={{ width: '100%', height: '100%' }} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
